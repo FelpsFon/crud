@@ -1,0 +1,116 @@
+/* style.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the dashboard layout */
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    font-size: 18px;
+}
+
+.sidebar {
+    padding: 1.5em;
+    width: 200px;
+    background-color:  #FF5757;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar i {
+    color: #FFFFFF;
+    size: 10px;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.sidebar .logo-img {
+    height: 4em;
+    margin-bottom: 2em;
+}
+
+.sidebar a:hover {
+    color: #B51414;
+    font-weight: 700;
+    border-bottom: 2px solid #B51414;
+    padding-bottom: 0.1em;
+ }
+
+.content {
+    flex-grow: 1;
+    padding: 1em;
+    padding-left: 3em;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.user-info h2 {
+    padding: 1em;
+}
+
+.alert {
+    padding: 1em;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    position: relative;
+}
+
+.alert p {
+    margin: 1em;
+}
+
+.close-btn {
+    border: none;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: #FFFFFF;
+}
+
+.close-btn:hover {
+    color: #FF5757;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.history-table th {
+    background-color: #f0f0f0;
+}
+
+.history-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
